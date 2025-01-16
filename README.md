@@ -1,0 +1,2 @@
+# CourseHelper
+Personal project CourseHelper
