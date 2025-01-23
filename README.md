@@ -15,11 +15,11 @@ You can clone this repository and run a local instance of the app in two ways (w
 Make sure you have `docker` installed and the daemon running. More information about installation can be found [here](https://docs.docker.com/get-docker/). Once you get that up and running, navigate into the cloned repository and run:
 
 ```
-docker build . -t boilerclasses
+docker build . -t course-helper
 ```
 After the image is created, run:
 ```
-docker run -it -p 3000:3000 boilerclasses
+docker run -it -p 3000:3000 course-helper
 ```
 This will expose the container's port `3000` to your machine. Navigate to `localhost:3000` to view the app! You can edit whatever files you want locally, but you'll have to rebuild the image every time you want to view your changes. Thus, not ideal for quick changes.
 
