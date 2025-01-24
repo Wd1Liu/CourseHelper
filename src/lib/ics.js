@@ -24,7 +24,7 @@ export const generateICS = (lectures) => {
   let icsContent = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//BoilerClasses//Schedule//EN',
+    'PRODID:-//CourseHelper//Schedule//EN',
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
     'BEGIN:VTIMEZONE',
@@ -69,7 +69,7 @@ export const generateICS = (lectures) => {
 
       icsContent = icsContent.concat([
         'BEGIN:VEVENT',
-        `UID:${lecture.id}-${day}@boilerclasses.com`,
+        `UID:${lecture.id}-${day}@course-helper.com`,
         `DTSTAMP:${formatICSDate(new Date())}`,
         `DTSTART:${formatICSDate(startDate)}`,
         `DTEND:${formatICSDate(endDate)}`,
@@ -91,7 +91,7 @@ export const downloadICS = (lectures) => {
   const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
   const link = document.createElement('a');
   link.href = window.URL.createObjectURL(blob);
-  link.setAttribute('download', `${CURRENT_SEMESTER}_BoilerClasses.ics`);
+  link.setAttribute('download', `${CURRENT_SEMESTER}_CourseHelper.ics`);
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);

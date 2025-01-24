@@ -225,12 +225,12 @@ export const openPDFInNewTab = (selectedLectures) => {
   const rightMargin = pageWidth - STYLE.padding;
 
   // Add logo and text aligned to the right
-  const img = new Image();
-  img.src = '/boilerclasses-FULL.png';
-  doc.addImage(img, 'PNG', rightMargin - STYLE.logoHeight - 25, STYLE.topMargin - STYLE.logoHeight / 1.5, STYLE.logoHeight, STYLE.logoHeight);
+  // const img = new Image();
+  // img.src = '/boilerclasses-FULL.png';
+  // doc.addImage(img, 'PNG', rightMargin - STYLE.logoHeight - 25, STYLE.topMargin - STYLE.logoHeight / 1.5, STYLE.logoHeight, STYLE.logoHeight);
 
   doc.setFontSize(STYLE.titleSize * 0.5);
-  doc.text('BoilerClasses', rightMargin, STYLE.topMargin, { align: 'right' });
+  doc.text('CourseHelper', rightMargin, STYLE.topMargin, { align: 'right' });
   doc.setFont('Inter', 'normal');
 
   const startY = STYLE.topMargin + 12;
@@ -240,5 +240,5 @@ export const openPDFInNewTab = (selectedLectures) => {
   drawCourseBlocks(doc, startY, selectedLectures, courseColorMap);
   drawDetailedSchedule(doc, selectedLectures, courseColorMap);
 
-  doc.output('dataurlnewwindow', { filename: `${CURRENT_SEMESTER}_BoilerClasses.pdf` });
+  doc.output('dataurlnewwindow', { filename: `${CURRENT_SEMESTER}_CourseHelper.pdf` });
 };

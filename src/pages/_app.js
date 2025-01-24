@@ -44,7 +44,7 @@ export default function App({ Component, pageProps }) {
         }}
       />
       <Head>
-        <title>BoilerClasses</title>
+        <title>CourseHelper</title>
       </Head>
 
       <Component {...pageProps} />
