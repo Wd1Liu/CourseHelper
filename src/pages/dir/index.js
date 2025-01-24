@@ -19,10 +19,10 @@ const Directory = () => {
   return (
     <>
       <Head>
-        <title>Purdue Subject Directory | BoilerClasses</title>
-        <meta name="title" content="Purdue Subject Directory | BoilerClasses" />
-        <meta name="description" content="BoilerClasses (Boiler Classes) - Purdue's course catalog with over 13000 Purdue University courses. Find geneds, grades, prerequisites, schedules, and more." />
-        <meta name="keywords" content={`Purdue, Purdue Univesity, Purdue Courses, BoilerClasses, Boiler Classes, Boiler, Classes, BoilerCourses, Boiler Class, Catalog, Catalogue, Purdue Course Search, Purdue Course Catalog, Boilermakers, ${class_codes.join(', ')}`} />
+        <title>Purdue Subject Directory | CourseHelper</title>
+        <meta name="title" content="Purdue Subject Directory | CourseHelper" />
+        <meta name="description" content="CourseHelper - Purdue's course catalog with over 13000 Purdue University courses. Find geneds, grades, prerequisites, schedules, and more." />
+        <meta name="keywords" content={`Purdue, Purdue Univesity, Purdue Courses, Boiler Classes, Boiler, Classes, BoilerCourses, Boiler Class, Catalog, Catalogue, Purdue Course Search, Purdue Course Catalog, Boilermakers, ${class_codes.join(', ')}`} />
         <meta name='og:locality' content='West Lafayette' />
         <meta name='og:region' content='IN' />
         <meta name='og:postal-code' content='47906' />

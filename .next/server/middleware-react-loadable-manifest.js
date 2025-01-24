@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST="{\"pages\\\\_app.js -> ../components/themeToggle\":{\"id\":\"pages\\\\_app.js -> ../components/themeToggle\",\"files\":[\"static/chunks/src_components_themeToggle_js.js\"]}}"
