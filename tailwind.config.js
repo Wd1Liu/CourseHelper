@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       // Replace the default neutral colors with your custom light/dark palette
       colors: {
+        //1234567
         neutral: {
           // Light mode colors
           50: '#fafafa',   // lightest
